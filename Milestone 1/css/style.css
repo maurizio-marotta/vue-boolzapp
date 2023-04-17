@@ -1,0 +1,21 @@
+/*General*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.debug{
+  border: 1px solid black;
+  background-color: brown;
+}
+.d-flex{
+  display: flex;
+}
+
+/*container*/
+.container{
+  width: 800px;
+  height: 800px;
+  justify-content: center;
+  align-items: center;
+}
