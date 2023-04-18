@@ -90,5 +90,25 @@ button{
 
 .message{
     height: 100%;
-    width: 40%;
+    width: 60%;
   }
+
+/*manda messaggi*/
+.sidebar-bottom{
+  background-color: #F3EEEA;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.section{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+section.section i{
+  padding: 2%;
+}
