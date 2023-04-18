@@ -12,6 +12,11 @@
   display: flex;
 }
 
+.nome-u{
+  display: flex;
+  align-items: center;
+}
+
 /*Container*/
 
 .container-grad{
@@ -37,6 +42,7 @@
 
 
 .sidebar{
+  background-color: #FFFFFF;
   height: 100%;
   width: 40%;
 }
@@ -58,11 +64,7 @@ img{
   border-radius: 50%;
 }
 
-.contacts{
-  justify-content: center;
-  align-items: center;
-}
-
+/*blocco notifiche*/
 .notify{
   background-color: #8EDAFC;
   justify-self: center;
@@ -74,6 +76,43 @@ img{
   padding: 2%;
   background-color: white;
   border-radius: 50%;
+}
+/*contatti*/
+/*.contacts{
+  
+}*/
+
+.sidebar-contacts{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar.contacts{
+  width: 100%;
+}
+
+.nome-ora{
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.nome{
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.ora{
+  margin-top: 5px;
+  margin-right: 25px;
+}
+
+.last-mes {
+  position: absolute;
+  left: 5pc;
+  top: 200px
 }
 /*area di ricerca*/
 
