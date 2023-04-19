@@ -48,7 +48,7 @@
                 <div class="contacts sidebar-contacts d-flex">
                   <ul class="">
                   
-                    <li v-for="contatto in contacts" @click="contactClick">
+                    <li v-for="contatto in contacts" @click="contactClick(contatto)">
                       <div class="left d-flex">
                         <img src="img/avatar_1.jpg" alt="">
                       </div>
@@ -79,14 +79,14 @@
               </div>
               <div class="area-text d-flex ">
                   <div class="scroll-bar">
-                    <div class="chat">{{messaggio}}</div>
-                    <div class="chat-bot">{{messaggioBot}}</div>
+                    <div v-for="message in messages" class="chat-bot">{{message.message}}</div>
+                    <div v-for="message in messages" class="chat">{{message.messageU}}</div>
                   </div>
               </div>
               <div class="sidebar-bottom d-flex">
                 <section class="section d-flex">
                   <i class="far fa-smile"></i>
-                  <input id="invia" @click="" type="text" placeholder="Scrivi un messaggio..">
+                  <input @keyup.enter="submit" v-model="testVar" type="text" placeholder="Scrivi un messaggio..">
                   <i class="fas fa-microphone"></i>
                 </section>
               </div>
