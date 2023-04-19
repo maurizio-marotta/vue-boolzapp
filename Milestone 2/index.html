@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/style.css">
+  <title>vue-boolzapp</title>
+</head>
+<body>
+  <div id="app">
+    <div class="container-grad">
+      <div class="container">
+        <div class="chat-container d-flex">
+
+          <div class="sidebar">
+          
+            <div class="sidebar-top d-flex">
+              <div class="contacts d-flex">
+                  <img src="img/avatar_io.jpg" alt="img avatar">    
+                  <span class="nome-u">Uga de Ughi</span>
+                  
+              </div>
+              <div>
+                  <i class="fas fa-circle-notch"></i>
+                  <i class="fas fa-comment-alt"></i>
+                  <i class="fas fa-ellipsis-v"></i>
+              </div>
+            </div>
+            <div class="sidebar-center">
+              <div class="notify d-flex">
+                  <div class="icon">
+                      <i class="fas fa-bell-slash"></i>
+                  </div>
+                  <div>
+                      <h5>Ricevi notifiche di nuovi messaggi</h5>
+                      <span>Attiva notifiche desktop</span>
+                  </div>
+              </div>
+              <div class="form-input d-flex">
+                <button type="submit"><i class="fa fa-search"></i></button>
+                <input type="text" placeholder="Cerca o inizia una nuova chat.." name="search">
+              </div>
+              </div>
+              <div class="contacts scroll d-flex">
+                <div class="contacts sidebar-contacts d-flex">
+                  <ul class="">
+                  
+                    <li v-for="contatto in contacts" @click="contactClick">
+                      <div class="left d-flex">
+                        <img src="img/avatar_1.jpg" alt="">
+                      </div>
+                      <div class="nome-ora d-flex">
+                        <span class="nome">{{contatto.name}}</span>
+                        <span class="ora">{{contatto.messages[0].date}}</span>
+                      </div>
+                    </li>
+                    
+                  </ul>
+                </div>
+              </div>
+              
+            </div>
+            
+            <div class="message sfondo">
+              <div class="sidebar-top d-flex">
+                <div class="contacts d-flex">
+                    <img src="img/avatar_io.jpg" alt="img avatar">    
+                    <span class="nome-u">Uga de Ughi</span>
+                    
+                </div>
+                <div>
+                    <i class="fas fa-circle-notch"></i>
+                    <i class="fas fa-comment-alt"></i>
+                    <i class="fas fa-ellipsis-v"></i>
+                </div>
+              </div>
+              <div class="area-text d-flex ">
+                  <div class="scroll-bar">
+                    <div class="chat">{{messaggio}}</div>
+                    <div class="chat-bot">{{messaggioBot}}</div>
+                  </div>
+              </div>
+              <div class="sidebar-bottom d-flex">
+                <section class="section d-flex">
+                  <i class="far fa-smile"></i>
+                  <input id="invia" @click="" type="text" placeholder="Scrivi un messaggio..">
+                  <i class="fas fa-microphone"></i>
+                </section>
+              </div>
+            </div>
+
+          </div>
+        
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="script/script.js"></script>
+</body>
+</html>

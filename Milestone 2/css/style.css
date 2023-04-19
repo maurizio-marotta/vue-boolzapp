@@ -1,0 +1,212 @@
+/*General*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.debug{
+  border: 1px solid black;
+  background-color: brown;
+}
+.d-flex{
+  display: flex;
+}
+
+.nome-u{
+  display: flex;
+  align-items: center;
+}
+
+ul{
+  width: 100%;
+}
+
+li{
+  margin-top: 10px;
+  width: 100%;
+  list-style: none;
+}
+
+li:hover{
+  cursor: pointer;
+  background-color: #009688;
+}
+
+/*Container*/
+
+.container-grad{
+  height: 100vh;
+  background-image: linear-gradient( #009688 100px, #D6DBD7 20px);
+}
+
+/*.container{
+  position: relative;
+}*/
+
+.chat-container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: calc(100vh - 200px);
+  height: calc(100vh - 75px);
+  width: calc(100% - 250px);
+}
+
+/*Sidebar*/
+
+
+.sidebar{
+  background-color: #FFFFFF;
+  height: 100%;
+  width: 40%;
+}
+
+.sidebar-top{
+  width: 100%;
+}
+
+.sidebar-top {
+  height: 75px;
+  background-color: #ebebea;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+}
+/*Immagine*/
+img{
+  width: 50px;
+  border-radius: 50%;
+}
+
+/*blocco notifiche*/
+.notify{
+  background-color: #8EDAFC;
+  justify-self: center;
+  align-items: center;
+}
+
+.notify .icon{
+  margin: 10px 10px;
+  padding: 2%;
+  background-color: white;
+  border-radius: 50%;
+}
+/*contatti*/
+/*.contacts{
+  overflow-y: scroll;
+  height: 60vh;
+}*/
+
+.scroll{
+  overflow-y: scroll;
+  height: 60vh;
+}
+
+.sidebar-contacts{
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sidebar.contacts{
+  width: 100%;
+}
+
+.nome-ora{
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.nome{
+  margin-top: 5px;
+  margin-left: 20px;
+}
+
+.ora{
+  margin-top: 5px;
+  margin-right: 25px;
+}
+
+.last-mes {
+  position: absolute;
+  left: 5pc;
+  margin-top: 25px;
+}
+/*area di ricerca*/
+
+input{
+  width: 100%;
+  height: 36px;
+}
+
+button{
+  padding: 2%;
+}
+
+/*area messaggi*/
+
+.message{
+    height: 100%;
+    width: 60%;
+  }
+
+/*manda messaggi*/
+.sidebar-bottom{
+  background-color: #F3EEEA;
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+.section{
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+section.section i{
+  padding: 2%;
+}
+/*chat area*/
+
+.area-text{
+  height: 79%;
+}
+
+.scroll-bar{
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.sfondo{
+  background-image: url(../img/mine.jpg);
+  width: 60%;
+}
+
+/*chat*/
+
+.chat{
+  background-color: #DDF2C2;
+  border-radius: 10px;
+  padding: 7px;
+  margin: 7px 0px;
+  min-width: 20%;
+  max-width: 49%;
+  left: 50%;
+  position: relative;
+}
+
+.chat-bot{
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  padding: 7px;
+  margin: 7px 14px;
+  min-width: 20%;
+  max-width: 49%;
+}
