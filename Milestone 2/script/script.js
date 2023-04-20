@@ -183,7 +183,9 @@ createApp({
     submit(text){
       console.log(this.testVar)
     },
-    
+    testVar(){
+      this.testVar.push(testVar) = messageU
+    }
   }
 }).mount('#app')
 
